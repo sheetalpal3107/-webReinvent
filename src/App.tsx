@@ -10,10 +10,10 @@ function App() {
     <Router>
    
         <Routes>
-          <Route path="/signin">
+          <Route path="/login">
             <SignInPage />
           </Route>
-          <Route path="/signup">
+          <Route path="/register">
             <SignUpPage />
           </Route>
           <Route path="/" element={<ProtectedRoute element={<Dashboard/>}/>}/>
