@@ -1,9 +1,22 @@
 import React from 'react';
+import { createApp } from 'vue';
+//import App from './App.vue';
+import { createPinia } from 'pinia';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'tailwindcss/base';
+import 'tailwindcss/components';
+import 'tailwindcss/utilities';
 
+
+
+const app = createApp(App);
+// const pinia = createPinia();
+// app.use(pinia);
+
+app.mount('#app');
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
